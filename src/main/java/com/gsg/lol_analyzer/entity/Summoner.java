@@ -1,4 +1,4 @@
-package com.gsg.lol.analyzer.entity;
+package com.gsg.lol_analyzer.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
