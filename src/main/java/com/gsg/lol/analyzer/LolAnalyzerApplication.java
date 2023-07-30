@@ -1,4 +1,4 @@
-package com.gsg.lol_analyzer;
+package com.gsg.lol.analyzer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

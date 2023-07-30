@@ -1,4 +1,4 @@
-package com.gsg.lol_analyzer;
+package com.gsg.lol.analyzer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
