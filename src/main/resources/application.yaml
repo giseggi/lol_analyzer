@@ -3,3 +3,8 @@ spring:
     import:
     - application-api.yaml
     - application-mysql.yaml
+  h2:
+    console:
+      enabled: true
+server:
+  port: 8082

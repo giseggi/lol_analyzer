@@ -1,0 +1,4 @@
+riotapi:
+  api-key: ${API_KEY}
+  base-url:
+    summoner: https://jp1.api.riotgames.com/lol/summoner/
