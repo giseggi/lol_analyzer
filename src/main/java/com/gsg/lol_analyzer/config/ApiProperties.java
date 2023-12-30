@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 
 @Component
-@ConfigurationProperties(prefix = "baseurl")
+@ConfigurationProperties(prefix = "riotapi")
 @Data
 public class ApiProperties {
     String apiKey;

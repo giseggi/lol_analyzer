@@ -12,8 +12,7 @@ public class ApiConfig {
 
     private final ApiProperties apiProperties;
 
-    @Bean
-    @Qualifier("summoner")
+    @Bean(name = "summoner")
     public WebClient webClient() {
         return WebClient.builder().baseUrl(apiProperties.getBaseUrl().get("summoner"))
                 .defaultHeader("X-Riot-Token", apiProperties.getApiKey()).build();
