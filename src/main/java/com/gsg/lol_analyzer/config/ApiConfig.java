@@ -13,8 +13,14 @@ public class ApiConfig {
     private final ApiProperties apiProperties;
 
     @Bean(name = "summoner")
-    public WebClient webClient() {
+    public WebClient summoner() {
         return WebClient.builder().baseUrl(apiProperties.getBaseUrl().get("summoner"))
+                .defaultHeader("X-Riot-Token", apiProperties.getApiKey()).build();
+    }
+
+    @Bean(name = "match")
+    public WebClient match() {
+        return WebClient.builder().baseUrl(apiProperties.getBaseUrl().get("match"))
                 .defaultHeader("X-Riot-Token", apiProperties.getApiKey()).build();
     }
 }
