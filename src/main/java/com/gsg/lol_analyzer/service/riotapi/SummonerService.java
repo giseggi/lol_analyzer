@@ -1,6 +1,8 @@
 package com.gsg.lol_analyzer.service.riotapi;
 
+import reactor.core.publisher.Mono;
+
 public interface SummonerService {
 
-    String getPuuid(String summonerName);
+    Mono<String> getPuuid(String summonerName);
 }
